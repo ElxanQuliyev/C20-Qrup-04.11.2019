@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+    <span class="open-icon">
+        <i class="fas fa-bars"></i>
+    </span>
+
+    <div class="layout">
+        <span>
+            <i class="fas fa-times"></i>
+        </span>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </div>
+    <div class="flag"></div>
+<script>
+var ic=document.querySelector(".open-icon");
+var layout=document.querySelector(".layout")
+var closeIcon=document.querySelector(".layout span")
+
+ic.addEventListener("click",function(){
+    layout.classList.add("active");
+})
+closeIcon.addEventListener("click",function(){
+    layout.classList.remove("active");
+
+})
+
+</script>
+</body>
+</html>
